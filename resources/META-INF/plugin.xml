@@ -21,7 +21,9 @@
     </ul>
     ]]></description>
 
-  <change-notes>首次提交 </change-notes>
+  <change-notes><![CDATA[
+    <p>首次提交</p>
+   ]]></change-notes>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
   <idea-version since-build="173.0"/>
