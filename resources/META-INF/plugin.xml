@@ -2,12 +2,12 @@
   <id>cn.smallbun.screw.idea.action</id>
   <name>Screw</name>
   <version>1.0</version>
-  <vendor url="https://github.com/pingfangushi/screw" >pingfangushi</vendor>
+  <vendor url="https://github.com/yuanwenjian/screw-idea-plugin" >yuanwj</vendor>
 
   <description><![CDATA[
     <p>简洁好用的数据库表结构文档生成器</p>
     <br/>
-         <a href="https://github.com/pingfangushi/screw">GitHub</a>
+         <a href="https://github.com/yuanwenjian/screw-idea-plugin">GitHub</a>
     <br/>
 
     <p><b>特点:</b></p>
