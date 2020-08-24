@@ -38,7 +38,7 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="cn.smallbun.screw.idea.action" class="cn.smallbun.screw.idea.action.ScrewAction" text="ScrewAction"
+    <action id="cn.smallbun.screw.idea.action" class="cn.smallbun.screw.idea.action.ScrewAction" text="Screw"
             description="文档生成插件" icon="/META-INF/screw.png">
       <add-to-group group-id="ToolsMenu" anchor="last"/>
       <add-to-group group-id="EditorPopupMenu" anchor="last"/>

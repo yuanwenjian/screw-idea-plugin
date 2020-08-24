@@ -1,5 +1,6 @@
 package cn.smallbun.screw.idea.wrapper;
 
+import cn.smallbun.screw.idea.notify.ScrewNotifier;
 import com.intellij.openapi.fileChooser.FileChooser;
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
 import com.intellij.openapi.project.Project;
@@ -32,6 +33,8 @@ public class ScrewWrapper extends DialogWrapper {
     @Nullable
     @Override
     protected JComponent createCenterPanel() {
+        datasourcePanel.pack();
+
         return datasourcePanel.getCenter();
     }
 
@@ -90,6 +93,9 @@ public class ScrewWrapper extends DialogWrapper {
         config.setFilePath(virtualFile.getPath());
         try {
             ScrewExecutor.executor(config);
+        }catch (Exception e){
+            ScrewNotifier screwNotifier = new ScrewNotifier();
+            screwNotifier.notify("生成文档异常,异常原因为" + e.getMessage());
         }finally {
             super.doOKAction();
         }

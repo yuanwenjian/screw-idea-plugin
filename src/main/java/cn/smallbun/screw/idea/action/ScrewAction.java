@@ -13,6 +13,6 @@ public class ScrewAction extends AnAction {
         Project project = e.getProject();
         ScrewWrapper screwWrapper = new ScrewWrapper(project);
         screwWrapper.setResizable(true);
-        screwWrapper.show();
+        screwWrapper.showAndGet();
     }
 }

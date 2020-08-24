@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class DatasourcePanel extends JDialog {
+
     private JPanel contentPane;
     private JComboBox driver;
     private JTextField url;
@@ -21,6 +22,7 @@ public class DatasourcePanel extends JDialog {
     public DatasourcePanel() {
         setContentPane(contentPane);
         setModal(true);
+        isOpen.setSelected(true);
 
 
         // call onCancel() when cross is clicked
