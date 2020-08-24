@@ -14,5 +14,5 @@
 
 
 [screw]:https://github.com/pingfangushi/screw
-[plugin]: resources/photo/plugin.png
-[effect]: resources/photo/effect.png
+[plugin]: https://ftp.bmp.ovh/imgs/2020/08/e263d024bf46b9b1.png
+[effect]: https://ftp.bmp.ovh/imgs/2020/08/549f41f00a874188.png
