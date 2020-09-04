@@ -176,7 +176,6 @@
                 <item value="TIDB"/>
                 <item value="SqlServer"/>
                 <item value="PostgreSQL"/>
-                <item value="CacheDB"/>
               </model>
             </properties>
           </component>
