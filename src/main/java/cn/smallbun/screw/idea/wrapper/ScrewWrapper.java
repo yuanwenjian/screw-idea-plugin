@@ -1,5 +1,6 @@
 package cn.smallbun.screw.idea.wrapper;
 
+import cn.smallbun.screw.idea.model.ConfigStatement;
 import cn.smallbun.screw.idea.notify.ScrewNotifier;
 import com.intellij.openapi.fileChooser.FileChooser;
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
@@ -87,6 +88,7 @@ public class ScrewWrapper extends DialogWrapper {
         if (datasourcePanel.getIsOpen().isSelected()) {
             config.setOpen(true);
         }
+        ConfigStatement.setDataSourceConfig(config);
         FileChooserDescriptor singleFileDescriptor = new FileChooserDescriptor(false, true, false, false, false, false);
 
         VirtualFile virtualFile = FileChooser.chooseFile(singleFileDescriptor, project, null);

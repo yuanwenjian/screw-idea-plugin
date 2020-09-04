@@ -1,5 +1,10 @@
 package cn.smallbun.screw.idea.ui;
 
+import cn.smallbun.screw.idea.model.ConfigStatement;
+import cn.smallbun.screw.idea.model.DataSourceConfig;
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -24,6 +29,25 @@ public class DatasourcePanel extends JDialog {
         setModal(true);
         isOpen.setSelected(true);
 
+        DataSourceConfig config = ConfigStatement.getDataSourceConfig();
+        if (config != null) {
+            driver.setSelectedItem(config.getDriver());
+            url.setText(config.getUrl());
+            username.setText(config.getUserName());
+            password.setText(config.getPassword());
+            filename.setText(config.getFileName());
+            isOpen.setSelected(config.getOpen());
+            desc.setText(config.getDesc());
+            if (CollectionUtils.isNotEmpty(config.getIgnoreTable())) {
+                ignoreTable.setText(StringUtils.join(config.getIgnoreTable(),"\n"));
+            }
+            if (CollectionUtils.isNotEmpty(config.getIgnorePrefix())) {
+                ignorePrefix.setText(StringUtils.join(config.getIgnorePrefix(),"\n"));
+            }
+            if (CollectionUtils.isNotEmpty(config.getIgnoreSuffix())) {
+                ignoreSuffix.setText(StringUtils.join(config.getIgnoreSuffix(),"\n"));
+            }
+        }
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
