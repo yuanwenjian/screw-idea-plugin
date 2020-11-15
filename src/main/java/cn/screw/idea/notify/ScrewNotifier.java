@@ -1,4 +1,4 @@
-package cn.smallbun.screw.idea.notify;
+package cn.screw.idea.notify;
 
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationDisplayType;

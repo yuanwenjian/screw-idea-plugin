@@ -1,17 +1,17 @@
-package cn.smallbun.screw.idea.wrapper;
+package cn.screw.idea.wrapper;
 
-import cn.smallbun.screw.idea.model.ConfigStatement;
-import cn.smallbun.screw.idea.notify.ScrewNotifier;
+import cn.screw.idea.model.ConfigStatement;
+import cn.screw.idea.model.DataSourceConfig;
+import cn.screw.idea.ui.DatasourcePanel;
+import cn.screw.idea.notify.ScrewNotifier;
 import com.intellij.openapi.fileChooser.FileChooser;
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.openapi.vfs.VirtualFile;
-import cn.smallbun.screw.idea.model.DataSourceConfig;
-import cn.smallbun.screw.idea.model.DataSourceEnum;
-import cn.smallbun.screw.idea.model.EngineFileTypeEnum;
-import cn.smallbun.screw.idea.screw.ScrewExecutor;
-import cn.smallbun.screw.idea.ui.DatasourcePanel;
+import cn.screw.idea.model.DataSourceEnum;
+import cn.screw.idea.model.EngineFileTypeEnum;
+import cn.screw.idea.screw.ScrewExecutor;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 

@@ -1,4 +1,4 @@
-package cn.smallbun.screw.idea.model;
+package cn.screw.idea.model;
 
 import cn.smallbun.screw.core.engine.EngineFileType;
 

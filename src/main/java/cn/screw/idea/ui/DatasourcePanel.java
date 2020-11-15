@@ -1,7 +1,7 @@
-package cn.smallbun.screw.idea.ui;
+package cn.screw.idea.ui;
 
-import cn.smallbun.screw.idea.model.ConfigStatement;
-import cn.smallbun.screw.idea.model.DataSourceConfig;
+import cn.screw.idea.model.ConfigStatement;
+import cn.screw.idea.model.DataSourceConfig;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 

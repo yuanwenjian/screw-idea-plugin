@@ -1,8 +1,8 @@
 <idea-plugin>
-  <id>cn.smallbun.screw.idea.action</id>
+  <id>cn.screw.idea.action</id>
   <name>Screw</name>
   <version>1.0</version>
-  <vendor url="https://github.com/yuanwenjian/screw-idea-plugin" >yuanwj</vendor>
+  <vendor email="yuanwj0929@gmail.com" url="https://github.com/yuanwenjian/screw-idea-plugin" >yuanwj</vendor>
 
   <description><![CDATA[
     <p>简洁好用的数据库表结构文档生成器</p>
@@ -18,6 +18,28 @@
       <li>多种格式文档</li>
       <li>灵活扩展</li>
       <li>支持自定义模板</li>
+    </ul>
+    <p><b>用法:</b></p>
+     <ul>
+        <li>快捷键 control Alt P .设置user,password,url...生成 </li>
+        <li>Tools --> Custom Mybatis Log </li>
+        <li> 右键选择 </li>
+    </ul>
+    <p><b>English</b></p>
+    <ul>
+       <li>Concise, lightweight, and well-designed</li>
+       <li>Multi-database support</li>
+       <li>Multiple format documents</li>
+       <li>Multiple format documents</li>
+       <li>Flexible expansion</li>
+       <li>Support custom templates</li>
+     </ul>
+
+     <p><b>Method of use:</b></p>
+     <ul>
+        <li>The shortcut control Alt P opens the plugin.set user,password,url.. </li>
+        <li>Tools --> Custom Mybatis Log.set user,password,url.. </li>
+        <li> Right-click and select Custom Mybatis Log.set user,password,url.. </li>
     </ul>
     ]]></description>
 
@@ -38,8 +60,10 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="cn.smallbun.screw.idea.action" class="cn.smallbun.screw.idea.action.ScrewAction" text="Screw"
+    <action id="cn.smallbun.screw.idea.action" class="cn.screw.idea.action.ScrewAction" text="Screw"
             description="文档生成插件" icon="/META-INF/screw.png">
+      <keyboard-shortcut first-keystroke="control alt S " keymap="$default"/>
+
       <add-to-group group-id="ToolsMenu" anchor="last"/>
       <add-to-group group-id="EditorPopupMenu" anchor="last"/>
     </action>

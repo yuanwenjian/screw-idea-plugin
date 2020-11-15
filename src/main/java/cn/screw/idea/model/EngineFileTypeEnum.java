@@ -1,4 +1,4 @@
-package cn.smallbun.screw.idea.model;
+package cn.screw.idea.model;
 
 import cn.smallbun.screw.core.engine.EngineFileType;
 
@@ -6,7 +6,8 @@ public enum EngineFileTypeEnum {
 
     WORD("word",EngineFileType.WORD),
     HTML("html",EngineFileType.HTML),
-    MD("md",EngineFileType.MD)
+    MD("md",EngineFileType.MD),
+    XLS("xls", EngineFileType.XSL),
     ;
 
     private String name;

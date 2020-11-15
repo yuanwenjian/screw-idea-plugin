@@ -1,6 +1,6 @@
-package cn.smallbun.screw.idea.action;
+package cn.screw.idea.action;
 
-import cn.smallbun.screw.idea.wrapper.ScrewWrapper;
+import cn.screw.idea.wrapper.ScrewWrapper;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;

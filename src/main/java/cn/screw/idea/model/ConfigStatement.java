@@ -1,4 +1,4 @@
-package cn.smallbun.screw.idea.model;
+package cn.screw.idea.model;
 
 public class ConfigStatement {
     public static DataSourceConfig dataSourceConfig;
