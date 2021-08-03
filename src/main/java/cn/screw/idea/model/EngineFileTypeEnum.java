@@ -7,7 +7,6 @@ public enum EngineFileTypeEnum {
     WORD("word",EngineFileType.WORD),
     HTML("html",EngineFileType.HTML),
     MD("md",EngineFileType.MD),
-    XLS("xls", EngineFileType.XSL),
     ;
 
     private String name;

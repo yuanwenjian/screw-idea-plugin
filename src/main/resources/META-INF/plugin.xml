@@ -1,0 +1,74 @@
+<idea-plugin>
+  <id>cn.screw.idea.action</id>
+  <name>Screw</name>
+  <version>1.0</version>
+  <vendor email="yuanwj0929@gmail.com" url="https://github.com/yuanwenjian/screw-idea-plugin" >yuanwj</vendor>
+
+  <description><![CDATA[
+    <p>简洁好用的数据库表结构文档生成器</p>
+    <br/>
+         <a href="https://github.com/yuanwenjian/screw-idea-plugin">GitHub</a>
+    <br/>
+
+    <p><b>特点:</b></p>
+    <ul>
+      <li>简洁、轻量、设计良好</li>
+      <li>多数据库支持</li>
+      <li>多种格式文档</li>
+      <li>多种格式文档</li>
+      <li>灵活扩展</li>
+      <li>支持自定义模板</li>
+    </ul>
+    <p><b>用法:</b></p>
+     <ul>
+        <li>快捷键 control Alt P .设置user,password,url...生成 </li>
+        <li>Tools --> Custom Mybatis Log </li>
+        <li> 右键选择 </li>
+    </ul>
+    <p><b>English</b></p>
+    <ul>
+       <li>Concise, lightweight, and well-designed</li>
+       <li>Multi-database support</li>
+       <li>Multiple format documents</li>
+       <li>Multiple format documents</li>
+       <li>Flexible expansion</li>
+       <li>Support custom templates</li>
+     </ul>
+
+     <p><b>Method of use:</b></p>
+     <ul>
+        <li>The shortcut control Alt P opens the plugin.set user,password,url.. </li>
+        <li>Tools --> Screw Log.set user,password,url.. </li>
+        <li> Right-click and select Screw.set user,password,url.. </li>
+    </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    <p>首次提交</p>
+   ]]></change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="203.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <notificationGroup id="Custom Notification Group" displayType="BALLOON" key="notification.group.name"/>
+
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="cn.smallbun.screw.idea.action" class="cn.screw.idea.action.ScrewAction" text="Screw"
+            description="文档生成插件" icon="/META-INF/screw.png">
+      <keyboard-shortcut first-keystroke="control alt S " keymap="$default"/>
+
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>

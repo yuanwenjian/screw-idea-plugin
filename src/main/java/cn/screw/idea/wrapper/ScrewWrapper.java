@@ -96,8 +96,7 @@ public class ScrewWrapper extends DialogWrapper {
         try {
             ScrewExecutor.executor(config);
         }catch (Exception e){
-            ScrewNotifier screwNotifier = new ScrewNotifier();
-            screwNotifier.notify("生成文档异常,异常原因为" + e.getMessage());
+            ScrewNotifier.notifyError(this.project,"生成文档异常,异常原因为" + e.getMessage());
         }finally {
             super.doOKAction();
         }

@@ -81,7 +81,6 @@
                 <item value="WORD"/>
                 <item value="HTML"/>
                 <item value="MD"/>
-                <item value="XLS"/>
               </model>
             </properties>
           </component>

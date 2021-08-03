@@ -1,3 +1,5 @@
 /screw-idea-plugin.iml
 /out
 .idea
+/build
+.gradle
