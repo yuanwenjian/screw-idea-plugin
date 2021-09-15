@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>cn.screw.idea.action</id>
   <name>Screw</name>
-  <version>1.0</version>
+  <version>0.1</version>
   <vendor email="yuanwj0929@gmail.com" url="https://github.com/yuanwenjian/screw-idea-plugin" >yuanwj</vendor>
 
   <description><![CDATA[
@@ -48,7 +48,7 @@
    ]]></change-notes>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="203.0"/>
+  <idea-version since-build="203" />
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
@@ -56,7 +56,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <notificationGroup id="Custom Notification Group" displayType="BALLOON" key="notification.group.name"/>
+<!--    <notificationGroup id="Custom Notification Group" displayType="BALLOON" key="notification.group.name"/>-->
 
   </extensions>
 
