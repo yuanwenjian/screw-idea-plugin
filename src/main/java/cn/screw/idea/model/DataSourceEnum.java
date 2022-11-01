@@ -11,10 +11,11 @@ public enum DataSourceEnum {
      * Cache DB
      */
     Mysql("mysql","com.mysql.jdbc.Driver"),
-    Oracle("oracle","oracle.jdbc.driver.OracleDriver"),MariaDB("MariaDB","org.mariadb.jdbc.Driver"),
-    TIDB("TIDB","com.mysql.jdbc.Driver"),SqlServer("SqlServer","com.microsoft.sqlserver.jdbc.SQLServerDriver"),
-    PostgreSQL("PostgreSQL","org.postgresql.Driver")
-    /*,CacheDB("CacheDB","")*/;
+    Oracle("oracle","oracle.jdbc.driver.OracleDriver"),
+    MariaDB("MariaDB","org.mariadb.jdbc.Driver"),
+    TIDB("TIDB","com.mysql.jdbc.Driver"),
+    SqlServer("SqlServer","com.microsoft.sqlserver.jdbc.SQLServerDriver"),
+    PostgreSQL("PostgreSQL","org.postgresql.Driver");
 
 
     DataSourceEnum(String database, String driverClass) {

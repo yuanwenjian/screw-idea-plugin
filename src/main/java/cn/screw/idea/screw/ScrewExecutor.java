@@ -45,10 +45,10 @@ public class ScrewExecutor {
         ignoreTableName.add("test_group");
         //忽略表前缀
         ArrayList<String> ignorePrefix = new ArrayList<>();
-        ignorePrefix.add("test_");
+//        ignorePrefix.add("test_");
         //忽略表后缀
         ArrayList<String> ignoreSuffix = new ArrayList<>();
-        ignoreSuffix.add("_test");
+//        ignoreSuffix.add("_test");
         ProcessConfig processConfig = ProcessConfig.builder()
                 //指定生成逻辑、当存在指定表、指定表前缀、指定表后缀时，将生成指定表，其余表不生成、并跳过忽略表配置
                 //根据名称指定表生成
@@ -71,7 +71,7 @@ public class ScrewExecutor {
                 //版本
                 .version("1.0.0")
                 //描述
-                .description("数据库设计文档生成")
+                .description("数据库文档生成")
                 //数据源
                 .dataSource(dataSource)
                 //生成配置
